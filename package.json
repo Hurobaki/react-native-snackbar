@@ -18,7 +18,7 @@
     "clean": "rm -rf lib",
     "build": "npm run clean && babel src --out-dir lib --ignore src/__tests__",
     "prepublish": "npm run build",
-    "postinstall": "npm run build"
+    "postinstall": "node install.js"
   },
   "jest": {
     "preset": "react-native",
